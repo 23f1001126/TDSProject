@@ -1,0 +1,11 @@
+{
+  "name": "fastapi-cli",
+  "version": "1.0.0",
+  "description": "FastAPI app with npm and npx support",
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
+  },
+  "dependencies": {},
+  "devDependencies": {"prettier": "3.4.2"}
+}
