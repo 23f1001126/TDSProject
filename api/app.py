@@ -9,11 +9,14 @@ from utils.function_definations_llm import function_definitions_objects_llm
 from utils.openai_api import extract_parameters
 from utils.solution_functions import functions_dict
 
+from fastapi import FastAPI, File, Form, UploadFile, HTTPException
+from fastapi.responses import JSONResponse
+import os
 # Ensure the temporary directory exists
 tmp_dir = "tmp_uploads"
 os.makedirs(tmp_dir, exist_ok=True)
 
-app = Flask(__name__)
+app = FastAPI()
 SECRET_PASSWORD = os.getenv("SECRET_PASSWORD")
 
 
@@ -82,4 +85,5 @@ def redeploy():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    import uvicorn
+    uvicorn.run("api.app:app", host="0.0.0.0", port=8000, reload=True)
