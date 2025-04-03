@@ -41,13 +41,12 @@ openai_header = {
 def vs_code_version():
     return """
     Version:          Code 1.98.2 (ddc367ed5c8936efe395cffeec279b04ffd7db78, 2025-03-12T13:32:45.399Z)
-    OS Version:       Linux x64 6.12.15-200.fc41.x86_64
-    CPUs:             11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz (8 x 1300)
-    Memory (System):  7.40GB (3.72GB free)
-    Load (avg):       3, 2, 2
+    OS Version:       Windows_NT x64 10.0.26100
+    CPUs:             AMD Ryzen 5 5600H with Radeon Graphics          (12 x 3294)
+    Memory (System):  7.35GB (1.00GB free)
     VM:               0%
     Screen Reader:    no
-    Process Argv:     --crash-reporter-id 80b4d7e7-0056-4767-b601-6fcdbec0b54d
+    Process Argv:     --crash-reporter-id 1d436239-0726-48e5-b6a3-8c094a5cb47f
     GPU Status:       2d_canvas:                              enabled
                     canvas_oop_rasterization:               enabled_on
                     direct_rendering_display_compositor:    disabled_off_ok
@@ -58,32 +57,42 @@ def vs_code_version():
                     raw_draw:                               disabled_off_ok
                     skia_graphite:                          disabled_off
                     video_decode:                           enabled
-                    video_encode:                           disabled_software
+                    video_encode:                           enabled
                     vulkan:                                 disabled_off
                     webgl:                                  enabled
                     webgl2:                                 enabled
-                    webgpu:                                 disabled_off
+                    webgpu:                                 enabled
                     webnn:                                  disabled_off
 
-    CPU %	Mem MB	   PID	Process
-        2	   189	 18772	code main
-        0	    45	 18800	   zygote
-        2	   121	 19189	     gpu-process
-        0	    45	 18801	   zygote
-        0	     8	 18825	     zygote
-        0	    61	 19199	   utility-network-service
-        0	   106	 20078	ptyHost
-        2	   114	 20116	extensionHost [1]
-    21	   114	 20279	shared-process
-        0	     0	 20778	     /usr/bin/zsh -i -l -c '/usr/share/code/code'  -p '"0c1d701e5812" + JSON.stringify(process.env) + "0c1d701e5812"'
-        0	    98	 20294	fileWatcher [1]
+    CPU %   Mem MB     PID  Process
+        0       60   31796  code main
+        0        2     644     crashpad-handler
+        0      301    4616  window [1] (solution_functions.py - TDSProject - Visual Studio Code)
+        0       36    8088  extensionHost [1]
+        0        2   31028       "C:\Users\suhan\AppData\Local\Programs\Microsoft VS Code\Code.exe" "c:\Users\suhan\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\markdown-language-features\dist\serverWorkerMain" --node-ipc --clientProcessId=8088
+        0        6   31964       "C:\Users\suhan\AppData\Local\Programs\Microsoft VS Code\Code.exe" "c:\Users\suhan\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\json-language-features\server\dist\node\jsonServerMain" --node-ipc --clientProcessId=8088
+        0       22   17460  shared-process
+        1       41   18168  ptyHost
+        0       18    1936       C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command "try { . \"c:\Users\suhan\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1\" } catch {}"
+        0        6   10792         C:\WINDOWS\system32\cmd.exe /c ""C:\Users\suhan\AppData\Local\Programs\Microsoft VS Code\bin\code.cmd" -s"
+        0       84   33428           electron-nodejs (cli.js )
+        1      118   21876             "C:\Users\suhan\AppData\Local\Programs\Microsoft VS Code\Code.exe" -s
+        0       67   11020               crashpad-handler
+        0       86   28280               gpu-process
+        0       75   35352               utility-network-service
+        0        1   22172       conpty-agent
+        0        1   31696       conpty-agent
+        0       29   31712       C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command "try { . \"c:\Users\suhan\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1\" } catch {}"
+        0       77   21776     gpu-process
+        0       12   29820  fileWatcher [1]
+        0        9   30880     utility-network-service
 
     Workspace Stats:
-    |  Window (● solutions.py - tdsproj2 - python - Visual Studio Code)
-    |    Folder (tdsproj2): 6878 files
-    |      File types: py(3311) pyc(876) pyi(295) so(67) f90(60) txt(41) typed(36)
-    |                  csv(31) h(28) f(23)
-    |      Conf files:
+    |  Window (solution_functions.py - TDSProject - Visual Studio Code)
+    |    Folder (TDSProject): more than 20249 files
+    |      File types: py(6235) pyc(6215) pyi(2102) pyd(300) txt(165) lib(133)
+    |                  h(127) a(115) mat(110) gz(99)
+    |      Conf files: dockerfile(1) package.json(1)
     """
 
 
@@ -366,7 +375,7 @@ import base64
 import json
 
 
-def use_github(new_email: str = "21f3003062@ds.study.iitm.ac.in") -> str:
+def use_github(new_email: str = "23f1001126@ds.study.iitm.ac.in") -> str:
     """
     Updates email.json in a GitHub repo using GITHUB_TOKEN from env.
 
@@ -987,12 +996,12 @@ import requests
 import base64
 
 
-def host_your_portfolio_on_github_pages(new_email: str = "21f3003062@ds.study.iitm.ac.in") -> str:
+def host_your_portfolio_on_github_pages(new_email: str = "23f1001126@ds.study.iitm.ac.in") -> str:
     """
     Updates the email in index.html and deploys to GitHub Pages.
 
     Args:
-        new_email (str): New email to display (default: "21f3003062@ds.study.iitm.ac.in").
+        new_email (str): New email to display (default: "23f1001126@ds.study.iitm.ac.in").
 
     Returns:
         str: GitHub Pages URL (e.g., "https://veershah1231.github.io/test2/").
@@ -1027,7 +1036,7 @@ def host_your_portfolio_on_github_pages(new_email: str = "21f3003062@ds.study.ii
     #
     #     # Update email in HTML
     #     updated_content = current_content.replace(
-    #         "<!--email_off-->21f3003062@ds.study.iitm.ac.in<!--/email_off-->",
+    #         "<!--email_off-->23f10011262@ds.study.iitm.ac.in<!--/email_off-->",
     #         f"<!--email_off-->{new_email}<!--/email_off-->"
     #     )
     #
