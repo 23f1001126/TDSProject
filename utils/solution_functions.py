@@ -64,28 +64,18 @@ def vs_code_version():
                     webgpu:                                 enabled
                     webnn:                                  disabled_off
 
-    CPU %   Mem MB     PID  Process
-        0       60   31796  code main
-        0        2     644     crashpad-handler
-        0      301    4616  window [1] (solution_functions.py - TDSProject - Visual Studio Code)
-        0       36    8088  extensionHost [1]
-        0        2   31028       "C:\Users\suhan\AppData\Local\Programs\Microsoft VS Code\Code.exe" "c:\Users\suhan\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\markdown-language-features\dist\serverWorkerMain" --node-ipc --clientProcessId=8088
-        0        6   31964       "C:\Users\suhan\AppData\Local\Programs\Microsoft VS Code\Code.exe" "c:\Users\suhan\AppData\Local\Programs\Microsoft VS Code\resources\app\extensions\json-language-features\server\dist\node\jsonServerMain" --node-ipc --clientProcessId=8088
-        0       22   17460  shared-process
-        1       41   18168  ptyHost
-        0       18    1936       C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command "try { . \"c:\Users\suhan\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1\" } catch {}"
-        0        6   10792         C:\WINDOWS\system32\cmd.exe /c ""C:\Users\suhan\AppData\Local\Programs\Microsoft VS Code\bin\code.cmd" -s"
-        0       84   33428           electron-nodejs (cli.js )
-        1      118   21876             "C:\Users\suhan\AppData\Local\Programs\Microsoft VS Code\Code.exe" -s
-        0       67   11020               crashpad-handler
-        0       86   28280               gpu-process
-        0       75   35352               utility-network-service
-        0        1   22172       conpty-agent
-        0        1   31696       conpty-agent
-        0       29   31712       C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command "try { . \"c:\Users\suhan\AppData\Local\Programs\Microsoft VS Code\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1\" } catch {}"
-        0       77   21776     gpu-process
-        0       12   29820  fileWatcher [1]
-        0        9   30880     utility-network-service
+    CPU %	Mem MB	   PID	Process
+        2	   189	 18772	code main
+        0	    45	 18800	   zygote
+        2	   121	 19189	     gpu-process
+        0	    45	 18801	   zygote
+        0	     8	 18825	     zygote
+        0	    61	 19199	   utility-network-service
+        0	   106	 20078	ptyHost
+        2	   114	 20116	extensionHost [1]
+    21	   114	 20279	shared-process
+        0	     0	 20778	     /usr/bin/zsh -i -l -c '/usr/share/code/code'  -p '"0c1d701e5812" + JSON.stringify(process.env) + "0c1d701e5812"'
+        0	    98	 20294	fileWatcher [1]
 
     Workspace Stats:
     |  Window (solution_functions.py - TDSProject - Visual Studio Code)
